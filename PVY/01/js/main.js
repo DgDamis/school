@@ -25,6 +25,10 @@ document.getElementsByTagName('img')[0].addEventListener('mouseleave', function(
 });
 
 document.getElementById('meniciButton').addEventListener('click', function(){
+        document.getElementById('zahlavi').style.backgroundColor = randomRGB();
+});
+
+function randomRGB() {
     var r = Math.floor(Math.random() * 256);
     console.log(r);
     var g = Math.floor(Math.random() * 256);
@@ -34,7 +38,5 @@ document.getElementById('meniciButton').addEventListener('click', function(){
     var rgb = '';
     rgb = 'rgb('+r+','+g+','+b+')'
     console.log(rgb);
-    document.getElementById('zahlavi').style.backgroundColor = rgb;
-});
-
-
+    return rgb;
+};
