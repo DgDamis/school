@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <a class="navbar-brand" href="#">Kalkulačka</a>
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="#">Výpočet čisté mzdy</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <header class="header">
+        <h1 class="text-center">Výpočet čisté mzdy</h1>
+        <br>
+    </header>
+    <div class="container">
+        <form>
+            <form-group>
+                <div class="col-sm-12">
+                    <div class="col-sm-3"><label for="hrubaMzda">Hrubá mzda v Kč:</label></div>
+                    <div class="col-sm-3">
+                        <input type="number" name="hrubaMzda" id="mzda" step="100" value="20000">
+                    </div>
+                </div>
+            </form-group>
+
+
+
+            <form-group>
+                <div class="col-sm-12">
+                    <div class="col-sm-3">
+                        <label for="pocetDeti">
+                Počet dětí
+            </label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="number" name="deti" id="deti" value="0" step="1">
+                    </div>
+                </div>
+            </form-group>
+            <form-group>
+                <div class="col-sm-12">
+                    <div class="col-sm-3"><label for="poplatnik">Sleva na poplatníka</label></div>
+                    <div class="col-sm-3"><input type="checkbox" name="poplatnik" id="poplatnik" checked></div>
+                </div>
+            </form-group>
+
+            <form-group>
+                <div class="col-sm-12">
+                    <div class="col-sm-5 text-center">
+                        <br>
+                        <input type="button" value="Vypočítat" id="tlacitkoVypocet">
+                    </div>
+                </div>
+            </form-group>
+        </form>
+    </div>
+    <div class="container">
+        <br>
+        <br>
+        <div class="col-sm-3">
+            <h1>Čistá mzda</h1>
+        </div>
+        <div class="col-sm-3" id="cistaMzda">
+            <h1>0 Kč</h1>
+        </div> <br>
+        <br> <br>
+    </div>
+    <div class="container">
+        <div class="col-sm-3">Hrubá mzda</div>
+        <div class="col-sm-3" id="hrbMzda">0 Kč</div> <br>
+        <div class="col-sm-3">Superhrubá mzda</div>
+        <div class="col-sm-3" id="superHruba">0 Kč</div> <br>
+        <div class="col-sm-3">Sociální pojištění zaměstnavatel</div>
+        <div class="col-sm-3" id="socialniZamestnavatel">0 Kč</div> <br>
+        <div class="col-sm-3">Zdravotní pojištění zaměstnavatel</div>
+        <div class="col-sm-3" id="zdravotniZamestnavatel">0 Kč</div> <br>
+        <div class="col-sm-3">Sociální pojištění zaměstnanec</div>
+        <div class="col-sm-3" id="socialniPracovnik">0 Kč</div> <br>
+        <div class="col-sm-3">Zdravotní pojištění zaměstnanec</div>
+        <div class="col-sm-3" id="zdravotniPracovnik">0 Kč</div> <br>
+        <div class="col-sm-3">Záloha na daň před odečtením</div>
+        <div class="col-sm-3" id="zalohaPrOdectenim">0 Kč</div> <br> <br>
+        <div class="col-sm-3"><i>Slevy</i></div> <br>
+        <div class="col-sm-3" id="pocetDeti">0 Dětí</div>
+        <div class="col-sm-3" id="slevaNaDeti">0 Kč</div> <br>
+        <div class="col-sm-3">Sleva na poplatníka</div>
+        <div class="col-sm-3" id="slevaNaPoplatnika">2070 Kč</div> <br>
+        <br>
+        <div class="col-sm-3">Záloha na daň</div>
+        <div class="col-sm-3" id="zaloha">2070 Kč</div> <br> <br>
+
+    </div>
+
+    </div>
+    <script type="text/javascript" src="js/main.js">
+    </script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>>
+
+
+</body>
+
+</html>
