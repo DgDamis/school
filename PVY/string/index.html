@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Řetězce v JS</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/styly.css">
+
+    </head>
+    <body>
+        <header class="jumbotron">
+            <h1 class="text-center" id="hlavni_nadpis">Řetězce v JS</h1>
+        </header>
+        <main class="container">
+            <h1 class="text-center">Zadej řetězec</h1>
+            <form action="" class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <legend>Textový editor</legend>
+                    </div>
+                    <div class="form-group">
+                        <label for="editor" class="col-sm-2">Editor</label>
+                        <div class="col-sm-10">
+                            <textarea id="editor" class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
+                        <div class="form-group">
+                            <label for="editor" class="col-sm-2">Co nahradit</label>
+                            <div class="col-sm-10">
+                                <input type="text" id="oldString" class="form-control" value="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="editor" class="col-sm-2">Čím nahradit</label>
+                            <div class="col-sm-10">
+                                <input type="text" id="newString" class="form-control" value="">
+                            </div>
+                        </div>
+                    <div class="form-group">
+                        <div class="col-sm-10 col-sm-offset-2">
+                            <button type="button" class="btn btn-primary" id="submit" value="Potvrdit">Submit</button>
+                        </div>
+                    </div>
+            </form>
+            <hr>
+            <h3><b>Info o textu</b></h3>
+            <div id="info"></div>
+            <div id="info2"></div>
+            <hr>
+            <h3><b>Převod textu</b></h3>
+            <h4><b>Velká písmena</b></h4>
+            <div id="upperCase"></div>
+            <hr>
+            <h4><b>Malá písmena</b></h4>
+            <div id="lowerCase"></div>
+            <hr>
+            <h4>
+                <b>Zašifrovaný text</b>
+            </h4>
+            <div id="crypted"></div>
+            <hr>
+
+            <h4><b>Nahrazený text</b></h4>
+            <div id="replaced"></div>
+        </main>
+        <footer class="container-fluid">
+            <hr>
+            <p>&copy; Bitomský IT2</p>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

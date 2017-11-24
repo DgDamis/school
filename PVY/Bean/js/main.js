@@ -53,5 +53,6 @@ document.getElementById('beanImage').addEventListener('mouseleave', function () 
 document.getElementById('beanImage').addEventListener('click', function () {
     var random = (Math.ceil(Math.random() * 400)+39) + 'px' 
     console.log(random);
-    this.style.width = ',random,';
+    this.style.width = random;
 });
+
